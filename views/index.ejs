@@ -12,11 +12,17 @@
   <body>
     <!-- inclue the header.ejs partials file  -->
     <header>
-      <%- include('../partials/header'); %>
+      <%- include('partials/header'); %>
     </header>
 
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+
+    <!-- include card view from shop folder -->
+    <div class="container">
+        <%- include('shop/card'); %>
+    </div>
+    
 
     <!-- javascript from bootstrap -->
     
